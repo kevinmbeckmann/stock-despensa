@@ -6,7 +6,7 @@
 
 <VBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.despensa.controller.PrincipalController">
    <children>
-      <GridPane hgap="10.0" vgap="10.0" padding="10">
+      <GridPane hgap="10.0" vgap="10.0">
          <children>
             <Label text="Nombre:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
             <TextField fx:id="campoNombre" prefWidth="200.0" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
@@ -23,6 +23,9 @@
             <Button fx:id="botonLimpiar" mnemonicParsing="false" text="Limpiar" onAction="#handleLimpiar" prefHeight="30.0" prefWidth="120.0" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
             <Button mnemonicParsing="false" text="Mostrar caducados" onAction="#handleMostrarCaducados" prefHeight="30.0" prefWidth="120.0" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
          </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
       </GridPane>
       <TableView fx:id="tablaProductos" prefHeight="400.0" VBox.vgrow="ALWAYS">
         <columns>

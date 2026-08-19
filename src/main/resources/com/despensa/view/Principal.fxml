@@ -28,7 +28,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </VBox>
-            <VBox spacing="10.0">
+            <VBox spacing="10.0" alignment="TOP_RIGHT">
                <children>
                   <Button fx:id="botonAgregar" mnemonicParsing="false" text="Agregar" onAction="#handleAgregar" prefHeight="30.0" prefWidth="120.0" />
                   <Button fx:id="botonActualizar" mnemonicParsing="false" text="Actualizar" onAction="#handleActualizar" prefHeight="30.0" prefWidth="120.0" />

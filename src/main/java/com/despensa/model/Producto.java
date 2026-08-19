@@ -78,6 +78,11 @@ public class Producto {
         this.fechaCaducidad.set(fechaCaducidad);
     }
 
+    // Añadimos el método idProperty para que funcione con la tabla
+    public IntegerProperty idProperty() {
+        return new SimpleIntegerProperty(id);
+    }
+
     @Override
     public String toString() {
         return "Producto{" +

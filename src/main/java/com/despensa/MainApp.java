@@ -21,6 +21,14 @@ public class MainApp extends Application {
             scene.getStylesheets().add(getClass().getResource("/com/despensa/view/styles.css").toExternalForm());
             
             primaryStage.setTitle("Gestión de Stock de Despensa");
+            
+            // Establecer ícono de la aplicación (si existe)
+            try {
+                primaryStage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("/com/despensa/images/icon.png")));
+            } catch (Exception e) {
+                // Si no se encuentra el ícono, continuar sin él
+            }
+            
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {

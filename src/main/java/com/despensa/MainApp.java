@@ -16,6 +16,10 @@ public class MainApp extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/despensa/view/Principal.fxml"));
             Scene scene = new Scene(root, 800, 600);
+            
+            // Cargar el archivo CSS para mejorar el diseño
+            scene.getStylesheets().add(getClass().getResource("/com/despensa/view/styles.css").toExternalForm());
+            
             primaryStage.setTitle("Gestión de Stock de Despensa");
             primaryStage.setScene(scene);
             primaryStage.show();

@@ -1,0 +1,30 @@
+.root {
+    -fx-background-color: #f0f8ff;
+}
+
+.button {
+    -fx-background-color: #4682b4;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #5a9bd5;
+}
+
+.text-field {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #4682b4;
+    -fx-border-width: 1;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}

@@ -1,3 +1,3 @@
-Requiere Java 11\n
-Ejecutar con el siguiente comando:\n
+Requiere Java 11
+Ejecutar con el siguiente comando:
 mvn clean javafx:run
